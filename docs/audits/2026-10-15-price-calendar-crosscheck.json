@@ -1,0 +1,796 @@
+{
+  "audit_date": "2026-10-15",
+  "timestamp_china": "2026-10-15T21:39:35+08:00",
+  "scope": "limited-read-only-provider-crosscheck",
+  "calendar_expected_count": 243,
+  "calendar_closed_weekdays": [
+    "2025-01-01",
+    "2025-01-28",
+    "2025-01-29",
+    "2025-01-30",
+    "2025-01-31",
+    "2025-02-03",
+    "2025-02-04",
+    "2025-04-04",
+    "2025-05-01",
+    "2025-05-02",
+    "2025-05-05",
+    "2025-06-02",
+    "2025-10-01",
+    "2025-10-02",
+    "2025-10-03",
+    "2025-10-06",
+    "2025-10-07",
+    "2025-10-08"
+  ],
+  "results": [
+    {
+      "symbol": "sh510300",
+      "sina_url": "https://quotes.sina.cn/cn/api/jsonp_v2.php/=/CN_MarketDataService.getKLineData?symbol=sh510300&scale=240&ma=no&datalen=1023",
+      "tencent_url": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get?param=sh510300,day,2025-01-01,2025-12-31,640,",
+      "sina_http": 200,
+      "tencent_http": 200,
+      "sina_chars": 104754,
+      "tencent_chars": 64663,
+      "sina_raw_count": 1023,
+      "sina_raw_start": "2022-07-25",
+      "sina_raw_end": "2026-10-15",
+      "tencent_raw_count": 640,
+      "tencent_raw_start": "2023-05-17",
+      "tencent_raw_end": "2025-12-31",
+      "sina_2025_count": 243,
+      "tencent_2025_count": 243,
+      "sina_missing": [],
+      "sina_unexpected": [],
+      "tencent_missing": [],
+      "tencent_unexpected": [],
+      "price_mismatch_count": 0,
+      "price_mismatch_first10": [],
+      "volume_ratio_sina_over_tencent_times100_min": 0.99999989236743,
+      "volume_ratio_sina_over_tencent_times100_max": 1.0000000994403002,
+      "samples": [
+        {
+          "date": "2025-01-02",
+          "sina": {
+            "day": "2025-01-02",
+            "open": "4.020",
+            "high": "4.021",
+            "low": "3.881",
+            "close": "3.909",
+            "volume": "2172980338"
+          },
+          "tencent": [
+            "2025-01-02",
+            "4.020",
+            "3.909",
+            "4.021",
+            "3.881",
+            "21729803.00",
+            {},
+            "2.41",
+            "858289.20",
+            "0.000",
+            "0.000"
+          ]
+        },
+        {
+          "date": "2025-06-17",
+          "sina": {
+            "day": "2025-06-17",
+            "open": "3.991",
+            "high": "3.997",
+            "low": "3.974",
+            "close": "3.989",
+            "volume": "482891300"
+          },
+          "tencent": [
+            "2025-06-17",
+            "3.991",
+            "3.989",
+            "3.997",
+            "3.974",
+            "4828913.00",
+            {},
+            "0.51",
+            "192507.84",
+            "0.000",
+            "0.000"
+          ]
+        },
+        {
+          "date": "2025-06-18",
+          "sina": {
+            "day": "2025-06-18",
+            "open": "3.903",
+            "high": "3.910",
+            "low": "3.882",
+            "close": "3.904",
+            "volume": "480803410"
+          },
+          "tencent": [
+            "2025-06-18",
+            "3.903",
+            "3.904",
+            "3.910",
+            "3.882",
+            "4808034.00",
+            {},
+            "0.50",
+            "187416.71",
+            "0.000",
+            "0.000"
+          ]
+        },
+        {
+          "date": "2025-06-27",
+          "sina": {
+            "day": "2025-06-27",
+            "open": "3.990",
+            "high": "4.013",
+            "low": "3.958",
+            "close": "3.963",
+            "volume": "1069691383"
+          },
+          "tencent": [
+            "2025-06-27",
+            "3.990",
+            "3.963",
+            "4.013",
+            "3.958",
+            "10696914.00",
+            {},
+            "1.13",
+            "425850.57",
+            "0.000",
+            "0.000"
+          ]
+        },
+        {
+          "date": "2025-12-31",
+          "sina": {
+            "day": "2025-12-31",
+            "open": "4.777",
+            "high": "4.789",
+            "low": "4.742",
+            "close": "4.753",
+            "volume": "666829236"
+          },
+          "tencent": [
+            "2025-12-31",
+            "4.777",
+            "4.753",
+            "4.789",
+            "4.742",
+            "6668292.00",
+            {},
+            "0.75",
+            "317587.94",
+            "0.000",
+            "0.000"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "sz000333",
+      "sina_url": "https://quotes.sina.cn/cn/api/jsonp_v2.php/=/CN_MarketDataService.getKLineData?symbol=sz000333&scale=240&ma=no&datalen=1023",
+      "tencent_url": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get?param=sz000333,day,2025-01-01,2025-12-31,640,",
+      "sina_http": 200,
+      "tencent_http": 200,
+      "sina_chars": 107468,
+      "tencent_chars": 62678,
+      "sina_raw_count": 1023,
+      "sina_raw_start": "2022-07-25",
+      "sina_raw_end": "2026-10-15",
+      "tencent_raw_count": 640,
+      "tencent_raw_start": "2023-05-17",
+      "tencent_raw_end": "2025-12-31",
+      "sina_2025_count": 243,
+      "tencent_2025_count": 243,
+      "sina_missing": [],
+      "sina_unexpected": [],
+      "tencent_missing": [],
+      "tencent_unexpected": [],
+      "price_mismatch_count": 0,
+      "price_mismatch_first10": [],
+      "volume_ratio_sina_over_tencent_times100_min": 0.9999969238109587,
+      "volume_ratio_sina_over_tencent_times100_max": 1.0000023468302146,
+      "samples": [
+        {
+          "date": "2025-01-02",
+          "sina": {
+            "day": "2025-01-02",
+            "open": "75.400",
+            "high": "77.200",
+            "low": "75.000",
+            "close": "75.320",
+            "volume": "41367089"
+          },
+          "tencent": [
+            "2025-01-02",
+            "75.40",
+            "75.32",
+            "77.20",
+            "75.00",
+            "413671.00",
+            {},
+            "0.60",
+            "314307.16",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-06-17",
+          "sina": {
+            "day": "2025-06-17",
+            "open": "71.800",
+            "high": "73.080",
+            "low": "71.800",
+            "close": "72.060",
+            "volume": "32639478"
+          },
+          "tencent": [
+            "2025-06-17",
+            "71.80",
+            "72.06",
+            "73.08",
+            "71.80",
+            "326395.00",
+            {},
+            "0.47",
+            "236202.03",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-06-18",
+          "sina": {
+            "day": "2025-06-18",
+            "open": "72.190",
+            "high": "72.640",
+            "low": "72.020",
+            "close": "72.100",
+            "volume": "17528837"
+          },
+          "tencent": [
+            "2025-06-18",
+            "72.19",
+            "72.10",
+            "72.64",
+            "72.02",
+            "175288.00",
+            {},
+            "0.25",
+            "126564.82",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-06-27",
+          "sina": {
+            "day": "2025-06-27",
+            "open": "73.060",
+            "high": "73.190",
+            "low": "72.220",
+            "close": "72.280",
+            "volume": "22364021"
+          },
+          "tencent": [
+            "2025-06-27",
+            "73.06",
+            "72.28",
+            "73.19",
+            "72.22",
+            "223640.00",
+            {},
+            "0.32",
+            "162334.95",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-12-31",
+          "sina": {
+            "day": "2025-12-31",
+            "open": "78.870",
+            "high": "80.280",
+            "low": "77.850",
+            "close": "78.150",
+            "volume": "28775822"
+          },
+          "tencent": [
+            "2025-12-31",
+            "78.87",
+            "78.15",
+            "80.28",
+            "77.85",
+            "287758.00",
+            {},
+            "0.42",
+            "225659.85",
+            "0.00",
+            "0.00"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "sh000300",
+      "sina_url": "https://quotes.sina.cn/cn/api/jsonp_v2.php/=/CN_MarketDataService.getKLineData?symbol=sh000300&scale=240&ma=no&datalen=1023",
+      "tencent_url": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get?param=sh000300,day,2025-01-01,2025-12-31,640,",
+      "sina_http": 200,
+      "tencent_http": 200,
+      "sina_chars": 118580,
+      "tencent_chars": 71022,
+      "sina_raw_count": 1023,
+      "sina_raw_start": "2022-07-25",
+      "sina_raw_end": "2026-10-15",
+      "tencent_raw_count": 640,
+      "tencent_raw_start": "2023-05-17",
+      "tencent_raw_end": "2025-12-31",
+      "sina_2025_count": 243,
+      "tencent_2025_count": 243,
+      "sina_missing": [],
+      "sina_unexpected": [],
+      "tencent_missing": [],
+      "tencent_unexpected": [],
+      "price_mismatch_count": 243,
+      "price_mismatch_first10": [
+        {
+          "date": "2025-01-02",
+          "sina": {
+            "day": "2025-01-02",
+            "open": "3931.816",
+            "high": "3934.203",
+            "low": "3796.339",
+            "close": "3820.395",
+            "volume": "21789872400"
+          },
+          "tencent": [
+            "2025-01-02",
+            "3931.82",
+            "3820.40",
+            "3934.20",
+            "3796.34",
+            "217898724.00",
+            {},
+            "0.68",
+            "38863658.66",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-01-03",
+          "sina": {
+            "day": "2025-01-03",
+            "open": "3825.243",
+            "high": "3835.935",
+            "low": "3767.665",
+            "close": "3775.165",
+            "volume": "17534267600"
+          },
+          "tencent": [
+            "2025-01-03",
+            "3825.24",
+            "3775.16",
+            "3835.94",
+            "3767.67",
+            "175342676.00",
+            {},
+            "0.55",
+            "30432275.54",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-01-06",
+          "sina": {
+            "day": "2025-01-06",
+            "open": "3775.990",
+            "high": "3788.849",
+            "low": "3743.073",
+            "close": "3768.970",
+            "volume": "15094667000"
+          },
+          "tencent": [
+            "2025-01-06",
+            "3775.99",
+            "3768.97",
+            "3788.85",
+            "3743.07",
+            "150946670.00",
+            {},
+            "0.47",
+            "26280354.11",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-01-07",
+          "sina": {
+            "day": "2025-01-07",
+            "open": "3760.866",
+            "high": "3797.602",
+            "low": "3749.058",
+            "close": "3796.106",
+            "volume": "14645577900"
+          },
+          "tencent": [
+            "2025-01-07",
+            "3760.87",
+            "3796.11",
+            "3797.60",
+            "3749.06",
+            "146455779.00",
+            {},
+            "0.46",
+            "26685579.53",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-01-08",
+          "sina": {
+            "day": "2025-01-08",
+            "open": "3781.261",
+            "high": "3810.736",
+            "low": "3731.189",
+            "close": "3789.215",
+            "volume": "16916696800"
+          },
+          "tencent": [
+            "2025-01-08",
+            "3781.26",
+            "3789.22",
+            "3810.74",
+            "3731.19",
+            "169166968.00",
+            {},
+            "0.53",
+            "30096572.54",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-01-09",
+          "sina": {
+            "day": "2025-01-09",
+            "open": "3780.734",
+            "high": "3795.261",
+            "low": "3768.681",
+            "close": "3779.877",
+            "volume": "12979400200"
+          },
+          "tencent": [
+            "2025-01-09",
+            "3780.73",
+            "3779.88",
+            "3795.26",
+            "3768.68",
+            "129794002.00",
+            {},
+            "0.41",
+            "25148600.28",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-01-10",
+          "sina": {
+            "day": "2025-01-10",
+            "open": "3778.893",
+            "high": "3786.807",
+            "low": "3732.481",
+            "close": "3732.481",
+            "volume": "13752317100"
+          },
+          "tencent": [
+            "2025-01-10",
+            "3778.89",
+            "3732.48",
+            "3786.81",
+            "3732.48",
+            "137523171.00",
+            {},
+            "0.43",
+            "27535420.91",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-01-13",
+          "sina": {
+            "day": "2025-01-13",
+            "open": "3704.444",
+            "high": "3737.885",
+            "low": "3704.107",
+            "close": "3722.513",
+            "volume": "13644619900"
+          },
+          "tencent": [
+            "2025-01-13",
+            "3704.44",
+            "3722.51",
+            "3737.89",
+            "3704.11",
+            "136446199.00",
+            {},
+            "0.43",
+            "24786195.32",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-01-14",
+          "sina": {
+            "day": "2025-01-14",
+            "open": "3728.556",
+            "high": "3826.640",
+            "low": "3718.877",
+            "close": "3820.540",
+            "volume": "17066465700"
+          },
+          "tencent": [
+            "2025-01-14",
+            "3728.56",
+            "3820.54",
+            "3826.64",
+            "3718.88",
+            "170664657.00",
+            {},
+            "0.54",
+            "34546148.01",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-01-15",
+          "sina": {
+            "day": "2025-01-15",
+            "open": "3810.035",
+            "high": "3816.828",
+            "low": "3790.166",
+            "close": "3796.026",
+            "volume": "14147552000"
+          },
+          "tencent": [
+            "2025-01-15",
+            "3810.04",
+            "3796.03",
+            "3816.83",
+            "3790.17",
+            "141475520.00",
+            {},
+            "0.44",
+            "27885059.55",
+            "0.00",
+            "0.00"
+          ]
+        }
+      ],
+      "volume_ratio_sina_over_tencent_times100_min": 1.0,
+      "volume_ratio_sina_over_tencent_times100_max": 1.0,
+      "samples": [
+        {
+          "date": "2025-01-02",
+          "sina": {
+            "day": "2025-01-02",
+            "open": "3931.816",
+            "high": "3934.203",
+            "low": "3796.339",
+            "close": "3820.395",
+            "volume": "21789872400"
+          },
+          "tencent": [
+            "2025-01-02",
+            "3931.82",
+            "3820.40",
+            "3934.20",
+            "3796.34",
+            "217898724.00",
+            {},
+            "0.68",
+            "38863658.66",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-06-17",
+          "sina": {
+            "day": "2025-06-17",
+            "open": "3875.177",
+            "high": "3880.416",
+            "low": "3860.409",
+            "close": "3870.379",
+            "volume": "12234252600"
+          },
+          "tencent": [
+            "2025-06-17",
+            "3875.18",
+            "3870.38",
+            "3880.42",
+            "3860.41",
+            "122342526.00",
+            {},
+            "0.37",
+            "22039981.89",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-06-18",
+          "sina": {
+            "day": "2025-06-18",
+            "open": "3871.650",
+            "high": "3881.346",
+            "low": "3854.658",
+            "close": "3874.971",
+            "volume": "12752862100"
+          },
+          "tencent": [
+            "2025-06-18",
+            "3871.65",
+            "3874.97",
+            "3881.35",
+            "3854.66",
+            "127528621.00",
+            {},
+            "0.39",
+            "23055385.83",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-06-27",
+          "sina": {
+            "day": "2025-06-27",
+            "open": "3949.788",
+            "high": "3969.263",
+            "low": "3918.204",
+            "close": "3921.758",
+            "volume": "19455791300"
+          },
+          "tencent": [
+            "2025-06-27",
+            "3949.79",
+            "3921.76",
+            "3969.26",
+            "3918.20",
+            "194557913.00",
+            {},
+            "0.59",
+            "34346822.98",
+            "0.00",
+            "0.00"
+          ]
+        },
+        {
+          "date": "2025-12-31",
+          "sina": {
+            "day": "2025-12-31",
+            "open": "4656.480",
+            "high": "4667.047",
+            "low": "4622.099",
+            "close": "4629.940",
+            "volume": "17076022400"
+          },
+          "tencent": [
+            "2025-12-31",
+            "4656.48",
+            "4629.94",
+            "4667.05",
+            "4622.10",
+            "170760224.00",
+            {},
+            "0.52",
+            "44449154.57",
+            "0.00",
+            "0.00"
+          ]
+        }
+      ]
+    }
+  ],
+  "followup_checks": {
+    "timestamp_china": "2026-10-15T21:40:17+08:00",
+    "index_precision_check": {
+      "sina_http": 200,
+      "tencent_http": 200,
+      "fields_compared": 972,
+      "max_abs_difference": 0.005,
+      "threshold": 0.005001,
+      "days_exceeding_threshold": 0,
+      "exceeding_samples": []
+    },
+    "qfq_check": {
+      "url": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get?param=sh510300,day,2025-06-17,2025-06-18,640,qfq",
+      "http": 200,
+      "rows": [
+        [
+          "2025-06-17",
+          "3.780",
+          "3.778",
+          "3.786",
+          "3.763",
+          "4828913.00",
+          {},
+          "0.51",
+          "192507.84",
+          ""
+        ],
+        [
+          "2025-06-18",
+          "3.780",
+          "3.781",
+          "3.787",
+          "3.759",
+          "4808034.00",
+          {},
+          "0.50",
+          "187416.71",
+          ""
+        ]
+      ]
+    },
+    "dividend_example": {
+      "raw_previous_close": 3.989,
+      "raw_ex_close": 3.904,
+      "cash_per_unit": 0.088,
+      "raw_return_pct": -2.130859864627721,
+      "gross_entitlement_total_return_pct": 0.07520681875157198
+    }
+  },
+  "calendar_sources": [
+    "https://www.sse.com.cn/disclosure/announcement/general/c/c_20241223_10767108.shtml",
+    "https://www.szse.cn/disclosure/notice/t20241223_611283.html"
+  ],
+  "preliminary_requests": [
+    {
+      "url": "https://money.finance.sina.com.cn/quotes_service/api/json_v2.php/CN_MarketDataService.getKLineData?symbol=sh510300&scale=240&ma=no&datalen=1023",
+      "scope": "default sandbox",
+      "http": null,
+      "result": "local proxy socket permission denial at 127.0.0.1:7897; not provider evidence"
+    },
+    {
+      "url": "https://money.finance.sina.com.cn/quotes_service/api/json_v2.php/CN_MarketDataService.getKLineData?symbol=sh510300&scale=240&ma=no&datalen=1023",
+      "scope": "tool-approved read-only public request",
+      "http": 200,
+      "characters": 46,
+      "business_error": 3,
+      "business_message": "Service not valid"
+    },
+    {
+      "url": "https://quotes.sina.cn/cn/api/jsonp_v2.php/=/CN_MarketDataService.getKLineData?symbol=sh510300&scale=240&ma=no&datalen=1023",
+      "scope": "public endpoint preview before comparison batch",
+      "http": 200,
+      "characters": 104754,
+      "result": "valid JSONP day/open/high/low/close/volume array"
+    }
+  ],
+  "limitations": [
+    "SDKs not installed or called; direct provider HTTP only",
+    "Raw full responses and hashes not archived; summary cannot reproduce all row-level comparisons offline",
+    "Three instruments and year 2025 only; no assertion of all-market or 2013-2026 coverage",
+    "Two web providers may share underlying exchange feeds",
+    "Absolute volume units require further primary-source confirmation; roughly 100-fold scale difference is observed",
+    "Index strict mismatches are precision-compatible: maximum absolute difference 0.005 points across 972 OHLC values",
+    "QFQ anchor and factors not verified; no historical point-in-time certification",
+    "No model training, strategy backtest, live trading, account login, paid subscription, or collection system implementation"
+  ]
+}

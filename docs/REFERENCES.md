@@ -1,6 +1,6 @@
 # 参考资料与证据边界
 
-更新日期：2026-10-15。本文记录会话讨论已使用的研究与官方资料；本次整理没有新增网络检索。
+更新日期：2026-10-15。初版记录此前讨论与暂停时的来源状态；当日用户恢复审计后，新增来源与真实核查范围列于第 11 节及四个专题。初版中的“未实调”保留其当时含义，不能据此否认后续直接提供方请求的成功。
 
 阅读状态区分为：**正文已读**、**摘要/书目信息已核查**、**官方文档已读**、**入口已测试**和**尚未实调**。状态仅描述本次项目讨论的核查深度，不代表对来源结论的无条件认可。接口文档和代码可访问不等于数据接口实测通过。
 
@@ -287,3 +287,17 @@
 - [美的 2024 年报转载全文](https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=10831117&stockid=000333)及[PDF](https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESZ_STOCK/2025/2025-3/2025-03-29/10831117.PDF)：公司公告公开转载，数值与时间边界见 [教学案例](examples/MIDEA_2024_REPORT.md)。
 
 待核验线索单列：[2013 年报摘要](https://epaper.stcn.com/paper/zqsb/html/2014-03/26/content_556378.htm)、[2024 年报 PDF](https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-03-31/510300_20250331_07Z1.pdf)、[2025 年报 PDF](https://pdf.dfcfw.com/pdf/H2_AN202603301820868083_1.pdf)。仅已定位链接，部分打开失败，未完成内容与披露时点核查；不能作为全持仓或全历史通过的证据。
+
+## 11. 恢复审计后的新增证据
+
+最新结论及范围见 [本轮汇总](DATA_AUDIT_2026-10-15_FOLLOWUP.md)，不将以下证据扩展成全历史验收。
+
+| 专题与来源 | 新增核查状态 |
+| --- | --- |
+| [BaoStock 沪深300官方文档](https://www.baostock.com/mainContent?file=hs300Stock.md)、[平台介绍](https://www.baostock.com/mainContent?file=home.md)、[官方发布元数据](https://pypi.org/pypi/baostock/json) | 已经官方新版只读文档接口取得正文；官方包只读源文件，未安装执行；公开匿名协议实取五个日期。详见[成分专题](audits/2026-10-15-hs300-constituents.md) |
+| [2020-11-27 上交所调样公告](https://www.sse.com.cn/market/sseindex/diclosure/c/c_20201127_5268298.shtml) | 重新读正文，与实际历史快照核对调整数量及四个点名例子，不是全部26对名单逐只通过 |
+| 巨潮财报原版、更正、更正版及东方财富指标 | 已核对具体ROE更正案例，并实取结构化指标；原件链接、哈希、请求和版本缺口见[财务专题](audits/2026-10-15-financial-revisions.md) |
+| [510300 2023年报](https://static.cninfo.com.cn/finalpage/2024-03-30/1219477019.PDF)、[2024中报](https://static.cninfo.com.cn/finalpage/2024-08-31/1221095122.PDF)、[2024第4季报](https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-01-22/510300_20250122_TVL5.pdf) | 已读相关原文，核对持仓子表、有限明细和衍生工具；公开页展开及去重见[ETF专题](audits/2026-10-15-etf-holdings-followup.md)，非完整全历史穿透通过 |
+| [上交所2025休市安排](https://www.sse.com.cn/disclosure/announcement/general/c/c_20241223_10767108.shtml)、[深交所2025休市安排](https://www.szse.cn/disclosure/notice/t20241223_611283.html) | 已据官方通知重建日历，六组2025行情日期集合一致；价格精度、量纲和分红反例见[行情专题](audits/2026-10-15-price-calendar-crosscheck.md) |
+
+本轮新资料均为公开来源。数据内容、服务长期稳定、访问限额、许可和再分发条件仍分别审计；没有因为无需账户而假定不受任何使用条件约束。

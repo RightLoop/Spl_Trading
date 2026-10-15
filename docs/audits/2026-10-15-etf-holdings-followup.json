@@ -1,0 +1,53 @@
+{
+  "audit_date": "2026-10-15",
+  "timezone": "Asia/Shanghai",
+  "scope": "510300持仓展开参数、原报告有限对照；非全量准入",
+  "raw_responses_archived": false,
+  "hash_scope": "SHA-256 of UTF-8 re-encoded decoded HTTP response content, not raw wire bytes",
+  "endpoint": "https://fundf10.eastmoney.com/FundArchivesDatas.aspx",
+  "fixed_parameters": {"type": "jjcc", "code": "510300"},
+  "requests": [
+    {"at":"2026-10-15T21:38:48.3158964+08:00","year":2024,"topline":"300","month":"","http":200,"chars":19953,"rows_q4_q3_q2_q1":[10,10,10,10]},
+    {"at":"2026-10-15T21:39:30.2583894+08:00","year":2024,"topline":"100","month":"","http":200,"chars":169096,"rows_q4_q3_q2_q1":[100,100,100,100]},
+    {"at":"2026-10-15T21:39:30.4061336+08:00","year":2024,"topline":"all","month":"","http":200,"chars":12,"response":"var apidata=","valid_tables":false},
+    {"at":"2026-10-15T21:39:30.8960345+08:00","year":2024,"topline":"200","month":"","http":200,"chars":19953,"rows_q4_q3_q2_q1":[10,10,10,10]},
+    {"at":"2026-10-15T21:41:10.0080880+08:00","year":2023,"topline":"100","month":"","http":200,"chars":115132,"rows_q4_q3_q2_q1":[100,54,100,17],"decoded_utf8_sha256":"d0fdee7aae40d28e2242e448b48ae7c95267c3283808be3e9ce2849173a10260"},
+    {"at":"2026-10-15T21:41:10.7001444+08:00","year":2023,"topline":"100","month":"12","http":200,"chars":234931,"rows_q4_q3_q2_q1":[392,54,100,17],"expanded_unique_codes":390,"expanded_starred":2,"expanded_missing_weights":2,"displayed_weight_sum_percent":98.68,"decoded_utf8_sha256":"1e90ea1230c3250c07374a39b1cf8d317415c4ea0061d2329c88ee957aeec3c6"},
+    {"at":"2026-10-15T21:41:11.4471512+08:00","year":2024,"topline":"100","month":"12","http":200,"chars":266810,"rows_q4_q3_q2_q1":[337,100,100,100],"expanded_unique_codes":337,"expanded_starred":0,"expanded_missing_weights":0,"displayed_weight_sum_percent":98.90,"decoded_utf8_sha256":"8d1e1abef9111b0be338ffe8bab2954b9b035f4e77a5eb51628c687e1186759d"},
+    {"at":"2026-10-15T21:41:12.1505631+08:00","year":2024,"topline":"100","month":"6","http":200,"chars":266763,"rows_q4_q3_q2_q1":[100,100,337,100],"expanded_unique_codes":332,"expanded_starred":5,"expanded_missing_weights":5,"displayed_weight_sum_percent":98.73,"decoded_utf8_sha256":"9527d829a12992ff2d7a8e24e49dcb41a0d991adbe2a5c79c03271d503baae9a"},
+    {"at":"2026-10-15T21:41:55.5699401+08:00","year":2023,"topline":"100","month":"12","http":200,"purpose":"repeat to inspect duplicate codes and non-starred aggregate","non_starred_rows":390,"non_starred_value_10k_cny":12930206.33},
+    {"at":"2026-10-15T21:43:26.8786174+08:00","year":2013,"topline":"100","month":"12","http":200,"chars":180486,"q4_rows":299,"q4_unique_codes":299,"q4_starred":0,"decoded_utf8_sha256":"c82319c785108e1679f16311f1725cf94e1d29ca104e627dcbd6e0eb563b0f09","original_report_crosschecked":false},
+    {"at":"2026-10-15T21:43:27.4847493+08:00","year":2025,"topline":"100","month":"12","http":200,"chars":268939,"q4_rows":342,"q4_unique_codes":342,"q4_starred":0,"decoded_utf8_sha256":"7ef76a8870d76d0934e7f7d7e0d51103a3998e4d9205456ecb818062f1811c8a","original_report_crosschecked":false}
+  ],
+  "failures": [
+    {"at":"2026-10-15T21:38:17.9150028+08:00","category":"local_network_permission","detail":"127.0.0.1:7897 socket denied; later approved read-only requests succeeded"},
+    {"at":"2026-10-15T21:39:31.3995860+08:00","category":"local_parser","year":2023,"topline":"100","month":"","detail":"initial decimal conversion encountered ---; subsequent request preserved missing weights"}
+  ],
+  "annual_2023_comparison": {
+    "original_url":"https://static.cninfo.com.cn/finalpage/2024-03-30/1219477019.PDF",
+    "report_period_end":"2023-12-31",
+    "report_dispatch_date":"2024-03-30",
+    "earliest_publication_timestamp_verified":false,
+    "publication_caveat":"Possible 2024-03-29 publication mentioned by newspaper search index; applicable fund list not verified",
+    "index_stock_rows":300,
+    "active_stock_rows":90,
+    "original_stock_value_cny":129302062860.16,
+    "provider_non_starred_stock_value_cny":129302063300,
+    "difference_cny":439.84,
+    "provider_added_duplicate_value_cny":512486000,
+    "provider_duplicate_codes":["002050","603260"],
+    "all_rows_individually_crosschecked":false
+  },
+  "midyear_2024_comparison": {
+    "original_url":"https://static.cninfo.com.cn/finalpage/2024-08-31/1221095122.PDF",
+    "report_period_end":"2024-06-30",
+    "report_dispatch_date":"2024-08-31",
+    "index_stock_rows":300,
+    "active_stock_rows":32,
+    "provider_expanded_rows":337,
+    "provider_unique_codes":332,
+    "provider_starred_rows":5,
+    "all_rows_individually_crosschecked":false
+  },
+  "admission_status":"limited_sample_evidence_only"
+}
