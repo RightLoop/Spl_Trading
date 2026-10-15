@@ -1,0 +1,200 @@
+{
+  "schema_version": "0.1",
+  "record_date": "2026-10-15",
+  "timezone": "Asia/Shanghai",
+  "status": "paused_for_documentation_by_user",
+  "scope": "limited_public_data_availability_samples",
+  "full_history_accepted": false,
+  "sdk_installed_or_called": false,
+  "complete_raw_responses_saved": false,
+  "raw_response_hashes_available": false,
+  "request_timestamps": null,
+  "timestamp_note": "Only the audit record date is retained; exact per-request timestamps were not preserved.",
+  "implementation_or_backtest_completed": false,
+  "network_note": "Initial sandbox proxy/socket denial was environmental. Some subsequent tool-approved read-only requests succeeded.",
+  "tencent_daily": {
+    "endpoint": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get",
+    "source_reference": "https://raw.githubusercontent.com/akfamily/akshare/main/akshare/stock_feature/stock_hist_tx.py",
+    "method": "GET",
+    "requested_adjustment": "empty suffix; unadjusted requested",
+    "row_field_order_start": ["date", "open", "close", "high", "low", "volume"],
+    "volume_units_verified": false,
+    "independent_price_crosscheck_completed": false,
+    "trading_calendar_crosscheck_completed": false,
+    "samples": [
+      {
+        "symbol": "sh510300",
+        "param": "sh510300,day,2013-01-01,2013-12-31,640,",
+        "http_status": 200,
+        "provider_code": 0,
+        "raw_rows": 388,
+        "raw_first_date": "2012-05-28",
+        "raw_last_date": "2013-12-31",
+        "filtered_rows": 238,
+        "filtered_first_date": "2013-01-04",
+        "filtered_last_date": "2013-12-31",
+        "duplicate_dates": 0,
+        "basic_ohlc_conflicts": 0,
+        "first_row": ["2013-01-04", "2.554", "2.530", "2.560", "2.499", "5364707.95", {}, "0.00", "135842.20", "0.000", "0.000"],
+        "last_row": ["2013-12-31", "2.335", "2.376", "2.379", "2.330", "3527363.61", {}, "0.00", "83135.51", "0.000", "0.000"]
+      },
+      {
+        "symbol": "sh510300",
+        "param": "sh510300,day,2025-01-01,2025-12-31,640,",
+        "http_status": 200,
+        "provider_code": 0,
+        "raw_rows": 640,
+        "raw_first_date": "2023-05-17",
+        "raw_last_date": "2025-12-31",
+        "filtered_rows": 243,
+        "filtered_first_date": "2025-01-02",
+        "filtered_last_date": "2025-12-31",
+        "duplicate_dates": 0,
+        "basic_ohlc_conflicts": 0,
+        "first_row": ["2025-01-02", "4.020", "3.909", "4.021", "3.881", "21729803.00", {}, "2.41", "858289.20", "0.000", "0.000"],
+        "last_row": ["2025-12-31", "4.777", "4.753", "4.789", "4.742", "6668292.00", {}, "0.75", "317587.94", "0.000", "0.000"]
+      },
+      {
+        "symbol": "sh000300",
+        "param": "sh000300,day,2025-01-01,2025-12-31,640,",
+        "http_status": 200,
+        "provider_code": 0,
+        "raw_rows": 640,
+        "raw_first_date": "2023-05-17",
+        "raw_last_date": "2025-12-31",
+        "filtered_rows": 243,
+        "filtered_first_date": "2025-01-02",
+        "filtered_last_date": "2025-12-31",
+        "duplicate_dates": 0,
+        "basic_ohlc_conflicts": 0,
+        "first_row": ["2025-01-02", "3931.82", "3820.40", "3934.20", "3796.34", "217898724.00", {}, "0.68", "38863658.66", "0.00", "0.00"],
+        "last_row": ["2025-12-31", "4656.48", "4629.94", "4667.05", "4622.10", "170760224.00", {}, "0.52", "44449154.57", "0.00", "0.00"]
+      },
+      {
+        "symbol": "sz000333",
+        "param": "sz000333,day,2025-01-01,2025-12-31,640,",
+        "http_status": 200,
+        "provider_code": 0,
+        "raw_rows": 640,
+        "raw_first_date": "2023-05-17",
+        "raw_last_date": "2025-12-31",
+        "filtered_rows": 243,
+        "filtered_first_date": "2025-01-02",
+        "filtered_last_date": "2025-12-31",
+        "duplicate_dates": 0,
+        "basic_ohlc_conflicts": 0,
+        "first_row": ["2025-01-02", "75.40", "75.32", "77.20", "75.00", "413671.00", {}, "0.60", "314307.16", "0.00", "0.00"],
+        "last_row": ["2025-12-31", "78.87", "78.15", "80.28", "77.85", "287758.00", {}, "0.42", "225659.85", "0.00", "0.00"]
+      }
+    ]
+  },
+  "eastmoney_etf_daily": {
+    "endpoint": "https://push2his.eastmoney.com/api/qt/stock/kline/get",
+    "query": {
+      "secid": "1.510300",
+      "klt": "101",
+      "fqt": "0",
+      "beg": "20130101",
+      "end": "20130131",
+      "fields1": "f1,f2,f3,f4,f5,f6",
+      "fields2": "f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+      "ut": "7eea3edcaed734bea9cbfc24409ed989"
+    },
+    "ut_note": "Public service constant in official wrapper source; not a user credential.",
+    "status": "request_failed_without_valid_data",
+    "http_status": null,
+    "error": "An error occurred while sending the request.",
+    "permanent_provider_failure_inferred": false
+  },
+  "etf_distribution": {
+    "symbol": "510300",
+    "url": "https://fundf10.eastmoney.com/fhsp_510300.html",
+    "http_status": 200,
+    "response_characters": 42277,
+    "distribution_events_observed": 14,
+    "all_events_primary_crosschecked": false,
+    "verified_event": {
+      "primary_url": "https://static.cninfo.com.cn/finalpage/2025-06-11/1223837903.PDF",
+      "announcement_date": "2025-06-11",
+      "distribution_reference_date": "2025-04-08",
+      "record_date": "2025-06-17",
+      "ex_date": "2025-06-18",
+      "payment_date": "2025-06-27",
+      "cny_per_10_units": 0.88,
+      "cny_per_unit": 0.088,
+      "actual_account_cash_availability_verified": false
+    },
+    "older_provider_event_not_primary_verified": {
+      "record_date": "2012-12-17",
+      "ex_date": "2012-12-18",
+      "payment_date": "2012-12-24",
+      "cny_per_10_units": 0.33
+    },
+    "split_provider_record": {
+      "date": "2012-05-11",
+      "ratio_text": "1:0.3709",
+      "precision_and_primary_archive_complete": false
+    },
+    "unit_issue": "Provider page is per 10 units; wrapper documentation label may imply per unit."
+  },
+  "etf_holdings": {
+    "symbol": "510300",
+    "endpoint": "https://fundf10.eastmoney.com/FundArchivesDatas.aspx",
+    "common_query": {"type": "jjcc", "code": "510300", "month": ""},
+    "headers": {
+      "User-Agent": "Mozilla/5.0",
+      "Referer": "https://fundf10.eastmoney.com/ccmx_510300.html"
+    },
+    "quarter_order": ["Q4", "Q3", "Q2", "Q1"],
+    "rows_exclude_headers": true,
+    "samples": [
+      {"year": 2013, "topline": 100, "http_status": 200, "response_characters": 98769, "quarter_rows": [100, 16, 100, 16]},
+      {"year": 2025, "topline": 100, "http_status": 200, "response_characters": 169189, "quarter_rows": [100, 100, 100, 100]},
+      {"year": 2013, "topline": 1000, "http_status": 200, "response_characters": 19876, "quarter_rows": [10, 10, 10, 10]},
+      {"year": 2019, "topline": 1000, "http_status": 200, "response_characters": 19869, "quarter_rows": [10, 10, 10, 10]},
+      {"year": 2025, "topline": 1000, "http_status": 200, "response_characters": 19972, "quarter_rows": [10, 10, 10, 10]}
+    ],
+    "year_list_observed": [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026],
+    "all_years_requested": false,
+    "complete_holdings_verified": false,
+    "original_disclosure_times_verified": false,
+    "topline_behavior_explained": false
+  },
+  "sse_pcf": {
+    "url": "https://www.sse.com.cn/disclosure/fund/etflist/detail.shtml?etfClass=03&fundid=510300&type=008",
+    "page_read": true,
+    "latest_announcement_date_displayed": "2026-10-14",
+    "creation_redemption_unit_fund_shares": 900000,
+    "historical_backend_api_called": false,
+    "historical_daily_coverage_verified": false,
+    "pcf_equivalent_to_complete_actual_holdings": false
+  },
+  "other_sources": {
+    "akshare": {
+      "official_docs_and_source_read": true,
+      "sdk_called": false,
+      "historical_constituents_api_success_verified": false,
+      "financial_original_versions_verified": false
+    },
+    "tushare": {
+      "official_docs_read": true,
+      "token_available_or_used": false,
+      "api_called": false,
+      "free_access_sufficiency_verified": false
+    },
+    "baostock": {
+      "homepage": "https://www.baostock.com/",
+      "homepage_http_status": 200,
+      "homepage_characters_approx": 7345,
+      "core_api_called": false,
+      "unlimited_free_access_verified": false
+    }
+  },
+  "resume_priorities": [
+    "Historical CSI300 membership at two dates and around an effective rebalance",
+    "Original and corrected financial filing versions and first publication times",
+    "ETF historical holdings completeness and original disclosure times",
+    "Independent price, units, calendar and corporate-action crosschecks",
+    "Full-range snapshots, content hashes, quality and access-condition review"
+  ]
+}
