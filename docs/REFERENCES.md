@@ -1,6 +1,6 @@
 # 参考资料与证据边界
 
-更新日期：2026-10-21。初版记录此前讨论与暂停时的来源状态；10 月 15 日恢复后的来源列于第 11 节，10 月 21 日续审见第 12 节。初版中的“未实调”保留其当时含义，不能据此否认后续直接提供方请求的成功。
+更新日期：2026-10-21。初版记录此前讨论与暂停时的来源状态；10 月 15 日恢复后的来源列于第 11 节，10 月 21 日续审见第 12、13 节，用途准入的专业依据见第 14 节。初版中的“未实调”保留其当时含义，不能据此否认后续直接提供方请求的成功。
 
 阅读状态区分为：**正文已读**、**摘要/书目信息已核查**、**官方文档已读**、**入口已测试**和**尚未实调**。状态仅描述本次项目讨论的核查深度，不代表对来源结论的无条件认可。接口文档和代码可访问不等于数据接口实测通过。
 
@@ -323,3 +323,19 @@
 | [510300 分红原公告](https://static.cninfo.com.cn/finalpage/2025-06-11/1223837903.PDF)、[腾讯公开行情端点](https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get) | 重新取得公告全文并渲染核对第 2、3 页，区分登记、除息、机构划款和红利发放。实调三组有限原价/前复权请求，恒等式为明确假设的教学例，未验证用户到账或完整复权算法。参数、时间与计算见[分红专题](audits/2026-10-21-dividend-adjustment.md)和[JSON](audits/2026-10-21-dividend-adjustment.json) |
 
 本轮仅保存有限解析记录、请求与校验值，没有归档完整 PDF 或大批原始行情；哈希本身不能代替离线原件、历史发布证据或再分发许可。
+
+## 14. 数据用途准入的专业依据
+
+2026-10-21 为[用途准入表](DATA_USE_ADMISSION.md)新增/复核以下资料。本轮没有新增市场数据接口样本或安装框架；专业资料支持判定方法，项目是否通过仍取决于实际证据。
+
+| 来源与阅读范围 | 用途与边界 |
+| --- | --- |
+| [ALFRED 官方帮助](https://alfred.stlouisfed.org/help)，正文已读 | 历史发布批次、修订与发布日期来源；支撑区分观察值和当时版本，不证明中国来源覆盖或规定本项目延迟 |
+| [Shumway（1997）：The Delisting Bias in CRSP Data](https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1997.tb03818.x)，出版社摘要及书目信息已核，未读全文 | 遗漏退市收益会使比较失真；用于要求保留退出经济结果，不把美国损失估计外推为 A 股补值 |
+| [scikit-learn 泄漏说明](https://scikit-learn.org/stable/common_pitfalls.html)、[TimeSeriesSplit](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html)，相关官方正文已读 | 预处理的拟合范围及按时间验证；工具不自动处理本项目证券池、财报版本或重叠标签，不以一个 gap 参数认证无泄漏 |
+| [Kenneth French 官方变量定义](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/variable_definitions.html)，正文已读 | 明确市值和价值/盈利/投资指标的字段、分母、期间；借鉴定义纪律，不照搬美股构造或收益结论 |
+| [cvxportfolio Cost models](https://www.cvxportfolio.com/en/stable/costs.html)，相关正文已读 | 成交规模、量与波动的成本依赖，事前量预测和分红是否已包含；未采用其美股默认参数，未运行模拟器 |
+| [LEAN Equity Model](https://www.quantconnect.com/docs/v2/writing-algorithms/reality-modeling/trade-fills/supported-models/equity-model)，相关正文已读 | 订单和行情时点、交易时间与显式成交规则；属于软件模拟模型，不是 A 股真实成交保证 |
+| [Glasserman 与 Lin（2023）](https://arxiv.org/abs/2309.17322)，本轮复核原论文摘要/版本，未读全文 | 历史记忆和背景知识干扰需分别考虑，偏差方向不能一概而论；匿名化不认证消除污染，不认证中文公告或本项目效果 |
+
+每项如何映射为当前研究规则、哪些为本项目判断，详见准入表第 8 节。原始数据合格、派生特征合格、投资证据有效和执行可行仍是不同结论。
