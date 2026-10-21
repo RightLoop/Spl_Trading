@@ -17,8 +17,10 @@
 | [投资政策](docs/INVESTMENT_POLICY.md) | 资金口径、80/20 基准、再平衡、风险与人工介入 |
 | [Demo 实验规格](docs/DEMO_SPEC.md) | 三组对照、研究时间、成本与验收标准 |
 | [数据范围与质量](docs/DATA_REQUIREMENTS.md) | 历史可用时点、原始版本、缺失及质量准入 |
+| [历史时间与版本准入](docs/ASOF_DATA_POLICY.md) | 日期精度、公开时间上界、更正与生效、ABC 公平性；研究默认规范 |
 | [数据审计阶段记录](docs/DATA_AUDIT_2026-10-15.md) | 实际请求结果、文档能力、发现的错误与缺口 |
 | [恢复后的审计进展](docs/DATA_AUDIT_2026-10-15_FOLLOWUP.md) | 按成分、财报、ETF、行情顺序汇总新证据与建模影响 |
+| [2026-10-21 时间与版本审计](docs/DATA_AUDIT_2026-10-21.md) | 继续核对成员生效、财报原版与公开时间；本轮接续入口 |
 | [审计结构化结果](docs/audits/2026-10-15-results.json) | 可机器读取的有限样本审计摘要 |
 | [美的年报教学案例](docs/examples/MIDEA_2024_REPORT.md) | 从事实到特征、预测与持仓之间的证据边界 |
 | [参考资料](docs/REFERENCES.md) | 原始论文、官方规则、数据源文档及支持范围 |

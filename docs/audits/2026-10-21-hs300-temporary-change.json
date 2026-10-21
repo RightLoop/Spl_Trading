@@ -1,0 +1,195 @@
+{
+  "schema_version": "0.1",
+  "audit_date": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "collection_clock": "system UTC, separately recorded from client audit date",
+  "scope": "One official non-Monday CSI300 event; 0 provider snapshots received",
+  "http_evidence": [
+    {
+      "url": "https://www.csindex.com.cn/csindex-home/announcement/queryAnnouncementByVo",
+      "method": "POST",
+      "request_body": {
+        "lang": "cn",
+        "searchInput": "武钢",
+        "startDate": "2017-02-01",
+        "endDate": "2017-02-28",
+        "page": {
+          "key": "",
+          "order": "desc",
+          "page": 1,
+          "rows": 10,
+          "sortBy": "publish_date"
+        },
+        "classList": [],
+        "indexList": [],
+        "relatedTopics": [],
+        "typeList": []
+      },
+      "request_started_at_utc": "2026-10-21T12:32:50.643271+00:00",
+      "response_received_at_utc": "2026-10-21T12:32:50.860085+00:00",
+      "http_status": 200,
+      "response_bytes": 465,
+      "response_sha256": "e862161867ca25750c315f874daa31277c6993894bda3ca3a09ea4638fc7a07c"
+    },
+    {
+      "url": "https://www.csindex.com.cn/csindex-home/announcement/queryAnnouncementById?id=4794",
+      "method": "GET",
+      "request_body": null,
+      "request_started_at_utc": "2026-10-21T12:32:50.860085+00:00",
+      "response_received_at_utc": "2026-10-21T12:32:50.986841+00:00",
+      "http_status": 200,
+      "response_bytes": 1971,
+      "response_sha256": "48086f491b82672180fbbb6f6ae233b6ee8a9bdd97870c6512234b61da46c7f4"
+    },
+    {
+      "url": "https://oss-ch.csindex.com.cn/static/html/csindex/public/sseportal/upload/files/upload/20170209600005cons.xlsx",
+      "method": "GET",
+      "request_body": null,
+      "request_started_at_utc": "2026-10-21T12:32:50.986841+00:00",
+      "response_received_at_utc": "2026-10-21T12:32:51.112261+00:00",
+      "http_status": 200,
+      "response_bytes": 16982,
+      "response_sha256": "d9b3d4766e5b97cb7c82a2c2438d3f7058ab14ce43871dab4a6082e5af97aa8a"
+    }
+  ],
+  "samples": [],
+  "sdk_installed_or_executed": false,
+  "application_code_written": false,
+  "raw_responses_archived": false,
+  "official_search_results": {
+    "data": [
+      {
+        "id": 4794,
+        "title": "关于武钢股份退市的指数调整公告",
+        "theme": "指数调样",
+        "publishDate": "2017-02-09",
+        "noticeType": "announcement",
+        "fileUrl": null,
+        "fileName": null
+      },
+      {
+        "id": 4800,
+        "title": "关于武钢股份退巿的指数调整",
+        "theme": "指数调样",
+        "publishDate": "2017-02-09",
+        "noticeType": "announcement",
+        "fileUrl": null,
+        "fileName": null
+      }
+    ],
+    "append": null,
+    "size": 1,
+    "total": 2,
+    "code": "200",
+    "msg": "Success",
+    "pageSize": 10,
+    "currentPage": 1,
+    "success": true
+  },
+  "official_notice": {
+    "id": 4794,
+    "page_url": "https://www.csindex.com.cn/#/about/newsDetail?id=4794",
+    "publish_date": "2017-02-09",
+    "title": "关于武钢股份退市的指数调整公告",
+    "effective_date": "2017-02-14",
+    "effective_weekday": "Tuesday",
+    "date_basis": "Official notice body states February 14 delisting effective; notice dated February 9 2017",
+    "publication_time_precision": "date only",
+    "independent_official_page": "https://www.sse.com.cn/market/sseindex/diclosure/c/c_20170209_4235948.shtml",
+    "effective_date_short_excerpt": "自武钢股份(600005)2月14日退市之日起",
+    "notice_signature_date": "2017年2月9日"
+  },
+  "attachment_sheet_nonempty_row_counts_including_header": {
+    "调入": 65,
+    "调出": 107
+  },
+  "official_hs300_changes": {
+    "attachment_url": "https://oss-ch.csindex.com.cn/static/html/csindex/public/sseportal/upload/files/upload/20170209600005cons.xlsx",
+    "selected_rows": [
+      {
+        "sheet": "调入",
+        "row": 22,
+        "cells": {
+          "A22": "000300",
+          "B22": "沪深300",
+          "C22": "600549",
+          "D22": "厦门钨业"
+        }
+      },
+      {
+        "sheet": "调出",
+        "row": 30,
+        "cells": {
+          "A30": "000300",
+          "B30": "沪深300",
+          "C30": "600005",
+          "D30": "武钢股份"
+        }
+      }
+    ],
+    "added": [
+      "sh.600549"
+    ],
+    "removed": [
+      "sh.600005"
+    ],
+    "scope": "Complete rows for index code 000300 in this one event; not all 300 constituents"
+  },
+  "discovery": {
+    "home": "https://www.csindex.com.cn/",
+    "application_script": "https://www.csindex.com.cn/static/js/app.d0fcb399.js",
+    "listing_script": "https://www.csindex.com.cn/static/js/chunk-9ed1c91e.5a707eac.js",
+    "detail_script": "https://www.csindex.com.cn/static/js/chunk-7a5ab91a.39f8e214.js",
+    "method": "Read public website scripts as text; followed normal search and detail methods, no script execution or authentication",
+    "preliminary_preview_reads": "Additional preview reads preceded the timestamped evidence batch; timestamps not retained for each preview."
+  },
+  "connection_attempts": [
+    {
+      "attempt": 1,
+      "host": "public-api.baostock.com",
+      "port": 10030,
+      "timeout_seconds": 20,
+      "outcome": "TimeoutError: timed out during socket.create_connection",
+      "request_started_at_utc": null,
+      "response_received_at_utc": null,
+      "login_sent": false,
+      "queries_sent": 0,
+      "note": "Exact timestamps not retained; exception observed before evidence was written. No provider business response.",
+      "failure_stage": "TCP connection"
+    },
+    {
+      "attempt": 2,
+      "host": "public-api.baostock.com",
+      "port": 10030,
+      "timeout_seconds": 20,
+      "request_started_at_utc": "2026-10-21T12:33:29.893380+00:00",
+      "login_sent": true,
+      "queries_sent": 0,
+      "connection_completed_at_utc": "2026-10-21T12:33:32.308634+00:00",
+      "outcome": "TimeoutError: timed out",
+      "failed_at_utc": "2026-10-21T12:33:52.319691+00:00",
+      "failure_stage": "waiting for anonymous login response after TCP connected",
+      "provider_business_response_received": false,
+      "login_public_defaults": "Official SDK defaults anonymous / 123456 / options 0, not a user credential"
+    }
+  ],
+  "planned_query_dates": [
+    "2017-02-13",
+    "2017-02-14",
+    "2017-02-15",
+    "2017-02-17",
+    "2017-02-20"
+  ],
+  "conclusions": {
+    "official_event_verified": true,
+    "exact_hs300_replacement_pair_verified": true,
+    "provider_event_timing_verified": false,
+    "full_historical_membership_verified": false
+  },
+  "limitations": [
+    "Only one temporary change, no full membership chain or weights",
+    "Official announcement precise intraday publication time not verified",
+    "One TCP connection timeout and one anonymous-login response timeout; no historical query was sent and no business response received. These observations do not establish membership lag or permanent service unavailability.",
+    "HTTP response hashes retained; raw JSON, HTML and workbook bytes not archived"
+  ]
+}

@@ -1,6 +1,6 @@
 # 参考资料与证据边界
 
-更新日期：2026-10-15。初版记录此前讨论与暂停时的来源状态；当日用户恢复审计后，新增来源与真实核查范围列于第 11 节及四个专题。初版中的“未实调”保留其当时含义，不能据此否认后续直接提供方请求的成功。
+更新日期：2026-10-21。初版记录此前讨论与暂停时的来源状态；10 月 15 日恢复后的来源列于第 11 节，10 月 21 日续审见第 12 节。初版中的“未实调”保留其当时含义，不能据此否认后续直接提供方请求的成功。
 
 阅读状态区分为：**正文已读**、**摘要/书目信息已核查**、**官方文档已读**、**入口已测试**和**尚未实调**。状态仅描述本次项目讨论的核查深度，不代表对来源结论的无条件认可。接口文档和代码可访问不等于数据接口实测通过。
 
@@ -290,7 +290,7 @@
 
 ## 11. 恢复审计后的新增证据
 
-最新结论及范围见 [本轮汇总](DATA_AUDIT_2026-10-15_FOLLOWUP.md)，不将以下证据扩展成全历史验收。
+2026-10-15 恢复后的结论及范围见 [当轮汇总](DATA_AUDIT_2026-10-15_FOLLOWUP.md)，不将以下证据扩展成全历史验收。
 
 | 专题与来源 | 新增核查状态 |
 | --- | --- |
@@ -301,3 +301,11 @@
 | [上交所2025休市安排](https://www.sse.com.cn/disclosure/announcement/general/c/c_20241223_10767108.shtml)、[深交所2025休市安排](https://www.szse.cn/disclosure/notice/t20241223_611283.html) | 已据官方通知重建日历，六组2025行情日期集合一致；价格精度、量纲和分红反例见[行情专题](audits/2026-10-15-price-calendar-crosscheck.md) |
 
 本轮新资料均为公开来源。数据内容、服务长期稳定、访问限额、许可和再分发条件仍分别审计；没有因为无需账户而假定不受任何使用条件约束。
+
+## 12. 2026-10-21 历史时间与版本续审
+
+- [中证武钢退市调整公告](https://www.csindex.com.cn/#/about/newsDetail?id=4794)、[中证官方名单附件](https://oss-ch.csindex.com.cn/static/html/csindex/public/sseportal/upload/files/upload/20170209600005cons.xlsx)：通过官网公开查询与详情接口取得公告，读取附件的沪深 300 完整变动行；公告日 2017-02-09，生效日 2017-02-14，调入 600549、调出 600005。[上交所同日公告](https://www.sse.com.cn/market/sseindex/diclosure/c/c_20170209_4235948.shtml)核对日期与原因，但其上证附件未用作沪深 300 名单。BaoStock 本轮未取得数据响应，见[临时调样专题](audits/2026-10-21-hs300-temporary-change.md)。
+- [巨潮历史公告目录](https://www.cninfo.com.cn/new/hisAnnouncement/query)：实际只读查询江波龙、限定日期和关键词，取得五条记录；原年报、更正公告、更正版三个 PDF 的内容哈希与前轮一致。目录字段为本次实际响应，不据此认证全市场精确首发时间，空关联字段仍须原文校核。参数及边界见[专题](audits/2026-10-21-financial-version-feasibility.md)和[JSON](audits/2026-10-21-financial-version-feasibility.json)。
+- [AKShare 巨潮披露源文件](https://raw.githubusercontent.com/akfamily/akshare/main/akshare/stock_feature/stock_disclosure_cninfo.py)：本轮仅只读源码和记录哈希，没有运行 SDK。原始上游时间字段与封装后的显示格式分别看待，不因显示为日期而断言上游没有更细字段。
+
+本轮研究安排与建模影响见[第二轮汇总](DATA_AUDIT_2026-10-21.md)。[准入规则](ASOF_DATA_POLICY.md)是基于审计形成的研究默认，不是提供方对历史完整性或服务可持续性的承诺。
