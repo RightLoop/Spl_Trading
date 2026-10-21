@@ -1,0 +1,229 @@
+{
+  "audit_date_client": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "scope": "one ETF dividend event and three limited price queries; no backtest",
+  "sdk_installed_or_run": false,
+  "raw_responses_archived": false,
+  "requests": [
+    {
+      "label": "raw_june",
+      "url": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get?param=sh510300%2Cday%2C2025-06-01%2C2025-06-27%2C30%2C",
+      "request_started_at_utc": "2026-10-21T12:47:55.512732+00:00",
+      "response_received_at_utc": "2026-10-21T12:47:56.022213+00:00",
+      "http_status": 200,
+      "response_bytes": 4597,
+      "response_sha256": "ae6d3fb261c7bbbffd082d482ad745d1af408b257e0f88e6f678d7d3be354059",
+      "business_code": 0,
+      "security_keys": [
+        "day",
+        "qt",
+        "mx_price",
+        "prec",
+        "fsStartDate",
+        "version"
+      ],
+      "series_field": "day",
+      "rows": 30,
+      "returned_range": [
+        "2025-05-16",
+        "2025-06-27"
+      ],
+      "selected_rows": [
+        [
+          "2025-06-10",
+          "3.997",
+          "3.972",
+          "4.005",
+          "3.958",
+          "7710518.00"
+        ],
+        [
+          "2025-06-17",
+          "3.991",
+          "3.989",
+          "3.997",
+          "3.974",
+          "4828913.00"
+        ],
+        [
+          "2025-06-18",
+          "3.903",
+          "3.904",
+          "3.910",
+          "3.882",
+          "4808034.00"
+        ],
+        [
+          "2025-06-27",
+          "3.990",
+          "3.963",
+          "4.013",
+          "3.958",
+          "10696914.00"
+        ]
+      ]
+    },
+    {
+      "label": "qfq_end_before_ex",
+      "url": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get?param=sh510300%2Cday%2C2025-06-01%2C2025-06-17%2C30%2Cqfq",
+      "request_started_at_utc": "2026-10-21T12:47:55.514732+00:00",
+      "response_received_at_utc": "2026-10-21T12:47:56.017707+00:00",
+      "http_status": 200,
+      "response_bytes": 4241,
+      "response_sha256": "20f5a7f4f612a5bfa02c3cca5a42d2fead5bbbe5c20ef70f9f102ec4a935b3de",
+      "business_code": 0,
+      "security_keys": [
+        "qfqday",
+        "qt",
+        "mx_price",
+        "prec",
+        "fsStartDate",
+        "version"
+      ],
+      "series_field": "qfqday",
+      "rows": 30,
+      "returned_range": [
+        "2025-05-06",
+        "2025-06-17"
+      ],
+      "selected_rows": [
+        [
+          "2025-06-10",
+          "3.786",
+          "3.761",
+          "3.794",
+          "3.747",
+          "7710518.00"
+        ],
+        [
+          "2025-06-17",
+          "3.780",
+          "3.778",
+          "3.786",
+          "3.763",
+          "4828913.00"
+        ]
+      ]
+    },
+    {
+      "label": "qfq_end_after_ex",
+      "url": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get?param=sh510300%2Cday%2C2025-06-01%2C2025-06-27%2C30%2Cqfq",
+      "request_started_at_utc": "2026-10-21T12:47:55.515232+00:00",
+      "response_received_at_utc": "2026-10-21T12:47:56.018626+00:00",
+      "http_status": 200,
+      "response_bytes": 4242,
+      "response_sha256": "6b8292ed12d159a1e768b82ad4cd7d15e643defaf85bdd3b7543864e7df33b62",
+      "business_code": 0,
+      "security_keys": [
+        "qfqday",
+        "qt",
+        "mx_price",
+        "prec",
+        "fsStartDate",
+        "version"
+      ],
+      "series_field": "qfqday",
+      "rows": 30,
+      "returned_range": [
+        "2025-05-16",
+        "2025-06-27"
+      ],
+      "selected_rows": [
+        [
+          "2025-06-10",
+          "3.786",
+          "3.761",
+          "3.794",
+          "3.747",
+          "7710518.00"
+        ],
+        [
+          "2025-06-17",
+          "3.780",
+          "3.778",
+          "3.786",
+          "3.763",
+          "4828913.00"
+        ],
+        [
+          "2025-06-18",
+          "3.780",
+          "3.781",
+          "3.787",
+          "3.759",
+          "4808034.00"
+        ],
+        [
+          "2025-06-27",
+          "3.867",
+          "3.840",
+          "3.890",
+          "3.835",
+          "10696914.00"
+        ]
+      ]
+    },
+    {
+      "label": "notice",
+      "url": "https://static.cninfo.com.cn/finalpage/2025-06-11/1223837903.PDF",
+      "request_started_at_utc": "2026-10-21T12:47:55.515232+00:00",
+      "response_received_at_utc": "2026-10-21T12:47:55.951489+00:00",
+      "http_status": 200,
+      "response_bytes": 139463,
+      "response_sha256": "cc7d6cb4bc5c887d874db2b1a0c2d6b2fdc0c7902dcfe79d2b61564b9e2b31fc",
+      "pages": 3,
+      "text_reviewed_pages": [
+        1,
+        2,
+        3
+      ],
+      "visually_reviewed_pages": [
+        2,
+        3
+      ]
+    }
+  ],
+  "notice_event": {
+    "fund": "510300",
+    "per_10_units_CNY": "0.880",
+    "per_unit_CNY": "0.088",
+    "record_date": "2025-06-17",
+    "ex_date": "2025-06-18",
+    "distribution_date": "2025-06-27",
+    "fund_transfer_to_depository_date": "2025-06-25",
+    "depository_transfer_to_designated_broker_date": "2025-06-26",
+    "entitlement_basis": "registered holders after record-date trading close",
+    "distribution_mode": "cash",
+    "tax_treatment_scope": "notice describes this distribution as temporarily exempt from individual and enterprise income tax; not a general stock-dividend rule",
+    "actual_user_cash_arrival_verified": false
+  },
+  "derived_illustration": {
+    "status": "hypothetical accounting example; no portfolio backtest or user account",
+    "units": "1000",
+    "initial_cash_CNY": "997.25",
+    "old_raw_close": "3.989",
+    "ex_raw_close": "3.904",
+    "entitlement_CNY": "88.00",
+    "initial_NAV_CNY": "4986.25",
+    "ex_NAV_CNY": "4989.25",
+    "ex_NAV_change_CNY": "3.00",
+    "ETF_gross_holding_return": "0.000752068187515668087239910",
+    "account_return": "0.0006016545500125344697919278015",
+    "raw_price_return": "-0.0213085986462772624717974430",
+    "qfq_close_ratio_return": "0.000794070937003705664372684",
+    "raw_June10_to17_ratio_return": "0.004279959718026183282980866",
+    "qfq_June10_to17_ratio_return": "0.004520074448285030576974209",
+    "no_reinvestment_through_distribution_date_NAV_CNY": "5048.25",
+    "no_reinvestment_through_distribution_date_cumulative_return": "0.012434194033592379042366508",
+    "payment_transfer_NAV_change_at_fixed_price": "0"
+  },
+  "limitations": [
+    "One cash dividend only, not all corporate actions",
+    "No independent proof of provider adjustment algorithm, anchor, factor versions or historical as-of availability",
+    "Requests return rows earlier than requested start; postfilter needed",
+    "Theoretical ledger ignores trading, fees, flows, other events and interest and assumes entitled quantity stays fixed",
+    "Declared distribution date is not evidence of user account intraday cash availability",
+    "No raw PDF or full raw market responses committed; only hashes, parameters and limited records",
+    "Web screenshot for final PDF page failed with Cache miss; direct PDF read and local rendering of pages 2 and 3 succeeded"
+  ]
+}

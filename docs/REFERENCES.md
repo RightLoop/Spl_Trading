@@ -309,3 +309,17 @@
 - [AKShare 巨潮披露源文件](https://raw.githubusercontent.com/akfamily/akshare/main/akshare/stock_feature/stock_disclosure_cninfo.py)：本轮仅只读源码和记录哈希，没有运行 SDK。原始上游时间字段与封装后的显示格式分别看待，不因显示为日期而断言上游没有更细字段。
 
 本轮研究安排与建模影响见[第二轮汇总](DATA_AUDIT_2026-10-21.md)。[准入规则](ASOF_DATA_POLICY.md)是基于审计形成的研究默认，不是提供方对历史完整性或服务可持续性的承诺。
+
+## 13. 2026-10-21 ETF 日期、量纲与分红续审
+
+本批次的范围与建模影响见[第三轮汇总](DATA_AUDIT_2026-10-21_MARKET_MECHANICS.md)。下列来源只支持对应有限结论，不替代历史全量验收。
+
+| 来源 | 本轮实际读取与边界 |
+| --- | --- |
+| [巨潮公告目录](https://www.cninfo.com.cn/new/hisAnnouncement/query)、[510300 年报](https://static.cninfo.com.cn/finalpage/2024-03-30/1219477019.PDF)、[中报](https://static.cninfo.com.cn/finalpage/2024-08-31/1221095122.PDF) | 实查两个窗口并重取两份 PDF，绑定基金代码、公告 ID、文件和本轮哈希。目录午夜时间不认证最早时刻；上轮未保留 PDF 原字节哈希，不能声称两轮文件一致。见[时间专题](audits/2026-10-21-etf-publication-time.md) |
+| [上海证券报年报提示公告](https://paper.cnstock.com/html/2024-03/30/content_1892535.htm)、[农行转载同名公告](https://ewealth.abchina.com/fund/Information/fundnews/202403310843082181356.htm) | 报纸正文称 2024-03-29 披露，但 HTML 基金清单为占位块；农行转载第 12 项确认本 ETF。转载是名单与日期的补证，不是管理人原站发布日志；农行直接 HTTP 失败、网页工具读取成功，未取得原字节哈希 |
+| [搜狐中报提示公告转载](https://q.fund.sohu.com/q/read.php?code=020320&id=4043145) | 读取第 12 项基金身份和 2024-08-31 披露陈述；转载路径的其他基金代码不作为目标 ETF 身份，身份按正文核对。非原站历史日志 |
+| [中证单日历史行情请求](https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=000300&startDate=20250102&endDate=20250102)、[官方主脚本](https://www.csindex.com.cn/static/js/app.d0fcb399.js)、[官方页面组件](https://www.csindex.com.cn/static/js/chunk-11a97808.d4db8a3b.js) | 实际取得一行数值与公开脚本，股票指数单位提示支持该日数量映射，金额按亿元舍入相符。提示位于当日栏目，历史 API 没有单位字段，尚未取得带该历史日期与单位的渲染表格；ETF/个股单位仍未完成。见[量纲专题](audits/2026-10-21-volume-units.md) |
+| [510300 分红原公告](https://static.cninfo.com.cn/finalpage/2025-06-11/1223837903.PDF)、[腾讯公开行情端点](https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get) | 重新取得公告全文并渲染核对第 2、3 页，区分登记、除息、机构划款和红利发放。实调三组有限原价/前复权请求，恒等式为明确假设的教学例，未验证用户到账或完整复权算法。参数、时间与计算见[分红专题](audits/2026-10-21-dividend-adjustment.md)和[JSON](audits/2026-10-21-dividend-adjustment.json) |
+
+本轮仅保存有限解析记录、请求与校验值，没有归档完整 PDF 或大批原始行情；哈希本身不能代替离线原件、历史发布证据或再分发许可。

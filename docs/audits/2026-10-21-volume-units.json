@@ -1,0 +1,148 @@
+{
+  "audit_date_client": "2026-10-21",
+  "client_timezone": "Asia/Shanghai",
+  "scope": "one-date absolute-unit evidence audit; CSI official row and public source labels obtained; ETF and stock absolute units remain unresolved",
+  "system_code_written": false,
+  "sdks_installed": false,
+  "strategy_backtest_run": false,
+  "official_csi_request": {
+    "method": "GET",
+    "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=000300&startDate=20250102&endDate=20250102",
+    "captured_at_utc": "2026-10-21T12:51:33.692677+00:00",
+    "http_status": 200,
+    "bytes": 392,
+    "sha256": "1eb35102fae3e79ac5ec4703838d4a5e2fe1dfdf5c9d17d846fa347135664a89",
+    "response": {
+      "code": "200",
+      "msg": "Success",
+      "data": [{
+        "tradeDate": "20250102",
+        "indexCode": "000300",
+        "indexNameCnAll": "沪深300指数",
+        "indexNameCn": "沪深300",
+        "indexNameEnAll": "CSI 300 Index",
+        "indexNameEn": "CSI 300",
+        "open": 3931.82,
+        "high": 3934.2,
+        "low": 3796.34,
+        "close": 3820.4,
+        "change": -114.52,
+        "changePct": -2.91,
+        "tradingVol": 21789872400,
+        "tradingValue": 3886.37,
+        "consNumber": 300.0,
+        "peg": 12.68
+      }],
+      "success": true
+    }
+  },
+  "official_unit_label_evidence": {
+    "classification": "public-source-text read, not executed UI verification",
+    "volume_label_key": "esgDetail.tradingVolDesc",
+    "stock_index_volume_unit": "share",
+    "volume_short_quote_zh": "股票指数单位为股",
+    "turnover_display_unit": "CNY100M",
+    "field_binding": "intraDayHeader.tradingVol is accompanied by the volume tooltip; tradingValue is accompanied by CNY100M; history tooltip reads tradingVol/tradingValue without a scale transform in the displayed formatter",
+    "limitations": [
+      "The historical API response contains no unit attribute",
+      "Explicit share tooltip inspected on the current-day header, not a date-specific historical table screenshot",
+      "Other components and commented snippets in the same script also contain a ten-thousand-lots label; do not apply that label globally",
+      "No full script source archived; response hashes alone are not offline reproduction"
+    ],
+    "sources": [
+      {
+        "url": "https://www.csindex.com.cn/static/js/app.d0fcb399.js",
+        "captured_at_utc": "2026-10-21T12:51:34.387333+00:00",
+        "bytes": 978869,
+        "sha256": "232cafcfdb4da07c7b2ce24efae30318b59a8168edd023566364579445f2d998"
+      },
+      {
+        "url": "https://www.csindex.com.cn/static/js/chunk-11a97808.d4db8a3b.js",
+        "captured_at_utc": "2026-10-21T12:51:33.812617+00:00",
+        "bytes": 160689,
+        "sha256": "20980bec46a780ad4135156ad931174f51d622803465ac9cbd4399df853c92d8"
+      }
+    ]
+  },
+  "prior_provider_evidence": {
+    "source_file": "2026-10-15-price-calendar-crosscheck.json",
+    "refetched_this_round": false,
+    "date": "2025-01-02",
+    "tencent_volume_zero_based_index": 5,
+    "tencent_amount_zero_based_index": 8,
+    "samples": [
+      {
+        "symbol": "sh510300",
+        "sina_volume": "2172980338",
+        "tencent_volume": "21729803.00",
+        "tencent_amount": "858289.20",
+        "absolute_unit_status": "unresolved",
+        "candidate_amount_unit": "10000 CNY",
+        "candidate_sina_volume_unit": "fund unit",
+        "candidate_mean_price": 3.949824970758663,
+        "day_low": 3.881,
+        "day_high": 4.021,
+        "mean_price_test_status": "conditional consistency only, not independent absolute-unit evidence"
+      },
+      {
+        "symbol": "sz000333",
+        "sina_volume": "41367089",
+        "tencent_volume": "413671.00",
+        "tencent_amount": "314307.16",
+        "absolute_unit_status": "unresolved",
+        "candidate_amount_unit": "10000 CNY",
+        "candidate_sina_volume_unit": "share",
+        "candidate_mean_price": 75.9800042976193,
+        "day_low": 75.0,
+        "day_high": 77.2,
+        "mean_price_test_status": "conditional consistency only, not independent absolute-unit evidence"
+      },
+      {
+        "symbol": "sh000300",
+        "sina_volume": "21789872400",
+        "tencent_volume": "217898724.00",
+        "tencent_amount": "38863658.66",
+        "absolute_unit_status": "single-date mapping supported by official numeric response and stock-index share label, subject to documented UI scope",
+        "official_volume_equals_sina": true,
+        "official_volume_equals_tencent_times_100": true,
+        "candidate_tencent_amount_unit": "10000 CNY",
+        "candidate_amount_in_CNY100M": 3886.365866,
+        "rounded_candidate_amount_in_CNY100M": 3886.37,
+        "official_amount_minus_candidate_in_CNY": 413400,
+        "mean_price_comparison_to_index_points": "invalid: aggregate component shares and amounts do not define index points"
+      }
+    ]
+  },
+  "unsuccessful_paths": [
+    {
+      "urls": [
+        "https://vip.stock.finance.sina.com.cn/corp/go.php/vMS_MarketHistory/stockid/000333.phtml?year=2025&jidu=1",
+        "https://vip.stock.finance.sina.com.cn/corp/go.php/vMS_MarketHistory/stockid/000300/type/S.phtml?year=2025&jidu=1"
+      ],
+      "http_status": 200,
+      "result": "Body was current quote layout, no target 2025-01-02 history row obtained. Redirect mechanism not inspected. Other column labels not used as history field evidence."
+    },
+    {
+      "url": "https://vip.stock.finance.sina.com.cn/fund_center/fund_jjzl.php?symbol=510300",
+      "http_status": 404
+    },
+    {
+      "urls": [
+        "https://q.stock.sohu.com/cn/000333/lshq.shtml",
+        "https://q.stock.sohu.com/hisHq?code=cn_000333&start=20250102&end=20250102&stat=1&order=D&period=d&callback=historySearchHandler&rt=jsonp",
+        "https://q.stock.sohu.com/cn/510300/lshq.shtml",
+        "https://q.stock.sohu.com/hisHq?code=cn_510300&start=20250102&end=20250102&stat=1&order=D&period=d&callback=historySearchHandler&rt=jsonp"
+      ],
+      "http_status": null,
+      "result": "No inspectable output before bounded batch was interrupted. No conclusion about provider history availability or unit support."
+    }
+  ],
+  "acceptance": {
+    "all_history_certified": false,
+    "etf_absolute_volume_certified": false,
+    "stock_absolute_volume_certified": false,
+    "csi_single_day_official_value_and_label_obtained": true,
+    "lot_size_rule_used_as_volume_unit_proof": false,
+    "capacity_or_participation_model_acceptance": "not passed; ETF and stock unit gaps remain"
+  }
+}
