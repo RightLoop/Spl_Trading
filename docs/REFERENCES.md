@@ -393,3 +393,15 @@
 | [Cvxportfolio 1.5.0 Constraints：TurnoverLimit](https://www.cvxportfolio.com/en/stable/constraints.html#cvxportfolio.constraints.TurnoverLimit)，定义及公式正文已读 | 定义每期非现金交易权重向量半L1约束；支持明确数学口径、排除现金重复计算。该定义不同于本项目max(买,卖)，尤其单向交易；不将周净持仓变化代替逐笔毛成交，不声称照搬框架约束，也未安装/运行框架 |
 
 采用关系：固定目标/阈值及换手纪律来自用户现有政策；外部资料用于检查其职责、术语和成本取舍。没有来源为本项目阈值、初建例外寿命或目标改善过滤提供实证最优性；未来须预登记并披露拒单、目标偏离、费用和样本外结果，不能看测试收益再挑规则。
+
+## 19. 2026-11-03 风险权限与恢复依据
+
+本轮只读下列一手资料，用于[风险规格](specs/RISK_STATES_AND_RECOVERY.md)的理由和边界，没有市场API新样本、实际账户证据或程序运行。35%全部停买来自用户D-034；5日/30%恢复、持续锁及H1历史情景为本项目待冻结设计，不是论文或监管规定。
+
+| 来源与实际阅读范围 | 支持的判断与不能外推的结论 |
+| --- | --- |
+| [FINRA Notice 16-19](https://www.finra.org/rules-guidance/notices/16-19)，2016-05-26，Discussion/Disclosure/Systemic Safeguards正文已读 | 触发价格不能保证成交价，短暂波动触发后可能反弹，限价则可能无法成交；支持阈值不保证损失封顶。美国订单说明不证明A股ETF支持相同委托类型，不认证我们的日线模拟或适用法律 |
+| [Kaminski与Lo（2014）作者MIT书目及摘要](https://alo.mit.edu/publications/page/13/)，When Do Stop-Loss Rules Stop Losses?，Journal of Financial Markets 18(1), 234–254；对应摘要已读 | 研究止损对收益/波动的增减，股指期货实证依采样频率；支持风控交易也有策略代价，须检验条件。未读全文，作者Dropbox全文未取得可读内容，不能声称复现定理/实证或外推本项目阈值与A股效果 |
+| [FINRA Notice 15-09](https://www.finra.org/rules-guidance/notices/15-09)，2015-03-26，Suggested Effective Practices尤其II–IV正文已读 | 变更/测试/版本留档、少量步骤停用算法、独立测试、监测/对账和防绕过控制，支持设计独立风控与有证据的恢复。美国机构治理仅作设计借鉴，不是本项目直接监管义务，也没有指定我们的恢复人、天数和回撤门槛 |
+
+项目推导：停止新增、请求撤单、确认撤单、减持及恢复分别记事件；账本故障不能靠价格上涨证明修复。历史人工审批不得由已知未来结果反推，沿用ASOF与WORKFLOW的信息/试验纪律；H1是无人工恢复的机械情景，不能宣称最优、收益下界或完整重现未来人工助手。
